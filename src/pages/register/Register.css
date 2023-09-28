@@ -1,0 +1,79 @@
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px 0;
+    background-color: rgb(193, 190, 255);
+}
+.register .card{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.register .card .left{
+    flex: 1;
+    background: linear-gradient(rgba(39, 11, 96, 0.712), rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.315)), url("https://images.pexels.com/photos/3046299/pexels-photo-3046299.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    text-align: start;
+}
+.register .card .left h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+.register .card .left p{
+
+}
+.register .card .left span{
+    font-size: 14px;
+}
+.register .card .left button{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: rebeccapurple;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.register .card .right{
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+.register .card .right h1{
+    color: #555;
+}
+.register .card .right form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.register .card .right form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}
+.register .card .right form button{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #938eef;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}

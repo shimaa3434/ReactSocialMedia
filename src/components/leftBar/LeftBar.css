@@ -1,0 +1,67 @@
+.leftbar{
+flex: 2;
+position: sticky ;
+top: 70px;
+height: calc(100vh - 70px);
+overflow: scroll;
+scrollbar-width: none;
+}
+
+.leftbar::-webkit-scrollbar{
+    display: none;
+}
+.leftbar .container{
+    padding: 20px;
+}
+.leftbar .container .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbar .container .menu span{
+ font-size: 12px;  
+ text-transform: uppercase; 
+}
+.leftbar .container hr{
+    margin: 20px 0px;
+    height: 1px;
+    border: none;
+    background-color: var(--border);
+}
+
+.leftbar .container .menu .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftbar .container .menu .user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.leftbar .container .menu .user span{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+.leftbar .container .menu .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.leftbar .container .menu .item img{
+     width: 30px;
+}
+.leftbar .container .menu .item span{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px){
+    .leftbar{
+        display: none;
+    }
+}

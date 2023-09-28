@@ -1,0 +1,82 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+    background-color: inherit;
+}
+.navbar .left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar .left span{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--logo);
+}
+.navbar .left .search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 5px;
+}
+.navbar .left .search input{
+    border:none;
+    outline: none;
+    width: 500px;
+    background-color: transparent;
+    color: inherit;
+}
+
+.navbar .left .search input:focus{
+    border:none;
+    outline: none;
+}
+
+.navbar .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .right .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+.navbar .right .user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar .right .user span{
+    
+}
+
+
+@media screen and (max-width: 960px){
+    .navbar .left .search input{
+        width: 200px;
+    }
+    .navbar .right .user{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .navbar .left .search input{
+        display: none;
+    }
+    .navbar .right{
+        display: none;
+    }
+}
